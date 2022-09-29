@@ -1,11 +1,14 @@
 import './App.css';
 import React from 'react';
-import {Dash} from './components/Dash'
+import { PersonCard } from './components/PersonCard';
 
 function App() {
   return (
     <div className="App">
-      <Dash fruit1 = "Orange" fruit2 = "Apples" fruit3 = "Kiwi"  />
+      <PersonCard firstName = {'Randy'} lastName = {'Nunez'} age = {30} hairColor = {'Brown'}/>
+      <PersonCard firstName = {'Ashley'} lastName = {'Perez'} age = {26} hairColor = {'Brown'}/>
+      <PersonCard firstName = {'Daniel'} lastName = {'Rivera'} age = {17} hairColor = {'Blonde'}/>
+      <PersonCard firstName = {'James'} lastName = {'Dunn'} age = {30} hairColor = {'Black'}/>
     </div>
   );
 }
