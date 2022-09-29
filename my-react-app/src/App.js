@@ -1,19 +1,11 @@
 import './App.css';
 import React from 'react';
+import {Dash} from './components/Dash'
 
 function App() {
   return (
     <div className="App">
-      <>
-      <h1>Hello Dojo!</h1>
-      </>
-      <h2>Things I need to do:</h2>
-        <ul className = "list">
-          <li>* Learn React</li>
-          <li>* Climb Mt. Everest</li>
-          <li>* Run a Marathon</li>
-          <li>* Feed the dogs</li>
-        </ul>
+      <Dash fruit1 = "Orange" fruit2 = "Apples" fruit3 = "Kiwi"  />
     </div>
   );
 }
