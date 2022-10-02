@@ -1,14 +1,14 @@
 import './App.css';
 import React from 'react';
-import { PersonCard } from './components/PersonCard';
+import { State } from './components/State';
+
+
 
 function App() {
   return (
     <div className="App">
-      <PersonCard firstName = {'Randy'} lastName = {'Nunez'} age = {30} hairColor = {'Brown'}/>
-      <PersonCard firstName = {'Ashley'} lastName = {'Perez'} age = {26} hairColor = {'Brown'}/>
-      <PersonCard firstName = {'Daniel'} lastName = {'Rivera'} age = {17} hairColor = {'Blonde'}/>
-      <PersonCard firstName = {'James'} lastName = {'Dunn'} age = {30} hairColor = {'Black'}/>
+      <State lastName = {"Doe"} firstName = {"Jane"} age = {45} hairColor = {"Black"}/>
+      <State lastName = {"Smith"} firstName = {"John"} age = {88} hairColor = {"Brown"}/>
     </div>
   );
 }
