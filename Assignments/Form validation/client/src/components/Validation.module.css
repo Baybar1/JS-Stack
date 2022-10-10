@@ -1,0 +1,14 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.column input {
+    margin: 10px;
+}
+
+.submit {
+    padding: 5px 15px;
+}
