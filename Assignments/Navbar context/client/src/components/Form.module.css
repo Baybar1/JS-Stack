@@ -1,0 +1,17 @@
+.form {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form input {
+    border: none;
+    background-color: lightgrey;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 20px;
+}
