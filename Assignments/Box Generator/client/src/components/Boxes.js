@@ -3,12 +3,17 @@ import React, {useState} from 'react'
 export const Boxes = (props) => {
     const [color,setColor] = useState('')
     const {newColor, setNewColor} = props;
+    
 
     const handleSubmit= (e) => {
         e.preventDefault();
         props.onNewBox(color);
         setNewColor([...newColor, color]);
+        if (handleSubmit) {
+            setColor('');
+        }
     }
+    
     return (
         <div>
             <form  onSubmit = {handleSubmit}>
