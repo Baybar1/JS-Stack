@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export const List = (props) => {
     const { list } = props;
     const [checked, setChecked] = useState([]);
-    const [disable,setDisable] = useState(true)
+    
     const { listItem } = props;
     const {setListItem} = props
     
@@ -11,7 +11,7 @@ export const List = (props) => {
         let updatedList = [...checked];
         if (e.target.checked) {
             updatedList = [...checked, e.target.value,];
-            setDisable(false)
+            
         } else {
             updatedList.splice(checked.indexOf(e.target.value), 1);
             
@@ -48,7 +48,7 @@ export const List = (props) => {
                             <li className={isChecked(list)}>
                                 {list}
                                 <input value={list} type='checkbox' onClick={handleCheck} />
-                                <button disabled = {disable} onClick={(e) => handleDelete(index)}>Delete</button>
+                                <button  onClick={(e) => handleDelete(index)}>Delete</button>
                             </li>
 
 

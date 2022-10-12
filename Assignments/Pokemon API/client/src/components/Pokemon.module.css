@@ -1,0 +1,17 @@
+.pokemon {
+    text-transform: uppercase;
+    
+}
+
+h1 {
+    text-align: center;
+}
+.container {
+    border: 2px solid black;
+    max-height: 800px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

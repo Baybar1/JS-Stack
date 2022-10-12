@@ -1,0 +1,11 @@
+.tab {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: gray;
+    margin-bottom: 10px;
+}
+
+.current {
+    background-color: black;
+    color: white;
+}

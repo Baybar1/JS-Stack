@@ -6,7 +6,7 @@ export const Add = (props) => {
     const [list,setList] = useState('')
 
     const handleSubmit = (e) => {
-        const {disable,setDisable} = props
+        
         e.preventDefault();
         props.onNewList(list);
         setListItem([...listItem, list]);
