@@ -1,0 +1,12 @@
+.all {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}

@@ -154,6 +154,7 @@ export const Validation = (props) => {
             <h1>{JSON.stringify(state)}</h1>
             <form className= {styles.column} onSubmit = {handleSubmit}>
                 
+                
                 <label htmlFor = 'first-name'>First Name:</label>
                 <input  value = {state.firstName} onChange = {(e) => handleFirstNameChange} />
                 
@@ -165,6 +166,7 @@ export const Validation = (props) => {
                 <input  value = {state.email} onChange = {(e) => handleEmailChange} />
                 
                 <input className = {styles.submit} type = 'submit' />
+                
                 
             </form>
         </div>
