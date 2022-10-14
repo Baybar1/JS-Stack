@@ -1,0 +1,33 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    gap: 30px;
+}
+
+.dropDown {
+    width: 200px;
+}
+
+.form input{
+    border: none;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+}
+
+.form select {
+    border: none;
+    background-color: #EFEFEF;
+    border-radius: 5px;
+}
+
+
+
+#submit {
+    background-color: blue;
+    color: white;
+    padding: 5px 20px;
+    font-size: 30px;
+}
