@@ -10,7 +10,7 @@ export const Error = () => {
             marginTop: '50px'
         }}>
             <h1>These are not the droids you are looking for</h1>
-            <img src='https://thumbs.gfycat.com/CreamySelfreliantFox-size_restricted.gif'></img>
+            <img src='https://thumbs.gfycat.com/CreamySelfreliantFox-size_restricted.gif' alt='Page Not Found'></img>
         </div>
     )
 }

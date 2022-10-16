@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState,} from 'react'
 import styles from './Search.module.css'
 import {useNavigate} from 'react-router-dom'
-import axios from 'axios'
+
 
 
 export const Search = (props) => {
@@ -23,15 +23,12 @@ export const Search = (props) => {
             } else if (option === 'Planets'){
                 navigate('/planets/' + id)
                 
-            } else if (option === ''){
+            } 
+            else if (option === ''){
                 navigate('/')
             } 
             
-            if (option === 'Planets' && id > 60) {
-                navigate('/error')
-            } else if (option === 'People' && id > 83) {
-                navigate('/error')
-            }
+            
             
             
 
@@ -41,7 +38,7 @@ export const Search = (props) => {
         <div>
             <form  onSubmit={showMe} className={styles.form}>
                 <label  htmlFor='searchForResource'>Search for:</label>
-                <select onChange={(e) => setOption(e.target.value)}  className= {styles.dropDown}>
+                <select value= {option} onChange={(e) => setOption(e.target.value)}  className= {styles.dropDown}>
                     <option></option>
                     <option>People</option>
                     <option>Planets</option>

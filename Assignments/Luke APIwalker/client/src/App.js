@@ -5,7 +5,7 @@ import { People } from './components/People';
 import { Planets } from './components/Planets';
 import { Search } from './components/Search';
 import { Error } from './components/Error';
-import { useState } from 'react';
+
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path ='/' element = {<Home />} />
         <Route  path = '/people/:id' element = {<People />} />
         <Route path = '/planets/:id' element = {<Planets />} />
-        <Route path = '/error' element = {<Error />} />
+        <Route path = '*' element = {<Error />} />
       </Routes>
     </BrowserRouter>
   );
