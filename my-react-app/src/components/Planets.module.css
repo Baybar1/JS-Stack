@@ -1,0 +1,25 @@
+.planets {
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center ;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    color: yellow;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 30px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-image: url('https://reviewsyouread.files.wordpress.com/2021/03/10-more-star-wars-planets-as-countries.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

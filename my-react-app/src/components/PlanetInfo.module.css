@@ -1,0 +1,24 @@
+.container {
+    height: 800px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    background-image: url('https://images.immediate.co.uk/production/volatile/sites/4/2018/08/eso0603a-b364432.jpg?quality=90&resize=700,466');
+    opacity: 0.75;
+}
+
+
+
+.keys {
+    font-weight: bold;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    
+}
+
+
+.click {
+    color: yellow;
+}

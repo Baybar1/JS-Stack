@@ -1,14 +1,20 @@
 import './App.css';
 import React from 'react';
-import { Form } from './components/Form';
+import { Planets } from './components/Planets';
+import {PlanetInfo} from './components/PlanetInfo';
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
 
 
 
 function App() {
   return (
-    <div>
-      <Form />
-    </div>
+    <BrowserRouter className = 'App'>
+      <h2><Link to = '/'>Home</Link></h2>
+    <Routes>
+      <Route path = '/' element = {<Planets/>} />
+      <Route path = '/info/:id' element = {<PlanetInfo/>} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
