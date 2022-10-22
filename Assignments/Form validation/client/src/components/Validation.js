@@ -84,7 +84,7 @@ export const Validation = (props) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     const handleFirstNameChange = (e) => {
-        if (e.target.value < 3) {
+        if (e.target.value.length < 3) {
             dispatch({
                 type: 'SET_FIRSTNAME_ERROR',
                 payload: 'First name must be at least 3 characters'
@@ -104,7 +104,7 @@ export const Validation = (props) => {
     }
 
     const handleLastNameChange = (e) => {
-        if (e.target.value < 3) {
+        if (e.target.value.length < 3) {
             dispatch({
                 type: 'SET_LASTNAME_ERROR',
                 payload: 'Last name must be at least 3 characters'
@@ -123,7 +123,7 @@ export const Validation = (props) => {
     }
 
     const handleEmailChange = (e) => {
-        if (e.target.value < 6) {
+        if (e.target.value.length < 6) {
             dispatch({
                 type: 'SET_EMAIL_ERROR',
                 payload: 'Email must be at least 6 characters'
@@ -156,14 +156,14 @@ export const Validation = (props) => {
                 
                 
                 <label htmlFor = 'first-name'>First Name:</label>
-                <input  value = {state.firstName} onChange = {(e) => handleFirstNameChange} />
+                <input type='text' value = {state.firstName.value} onChange = {(e) => handleFirstNameChange(e)} />
                 
 
                 <label htmlFor = 'last-name'>Last Name:</label>
-                <input  value = {state.lastName} onChange = {(e) => handleLastNameChange} />
+                <input type='text' value = {state.lastName.value} onChange = {(e) => handleLastNameChange(e)} />
 
                 <label htmlFor = 'email'>Email:</label>
-                <input  value = {state.email} onChange = {(e) => handleEmailChange} />
+                <input type='text' value = {state.email.value} onChange = {(e) => handleEmailChange(e)} />
                 
                 <input className = {styles.submit} type = 'submit' />
                 
